@@ -1,0 +1,166 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if request.auth.uid == document;
+      allow read: if request.auth.uid == document;
+      allow write: if request.auth.uid == document;
+      allow delete: if request.auth.uid == document;
+    }
+
+    match /chat_messages/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /chats/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /chats/{parent}/messages/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/messages/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /Autobiography_Types/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /AI_Models/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Autobiographies/{parent}/AutobiographyMessages/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/AutobiographyMessages/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/User_Entries/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/User_Entries/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/User_Chapters/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/User_Chapters/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/User_Autobiography/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/User_Autobiography/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/AI_Responses/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/AI_Responses/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/AI_Chapters/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/AI_Chapters/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/AI_Autobiography/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/AI_Autobiography/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/User_Audio_File/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/User_Audio_File/{document} {
+      allow read: if true;
+    }
+
+
+    match /Autobiographies/{parent}/AI_Instructions/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /{path=**}/AI_Instructions/{document} {
+      allow read: if true;
+    }
+
+  }
+}

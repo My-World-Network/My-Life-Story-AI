@@ -1,0 +1,50 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "AutobiographyMessages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "autobiography_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "AI_Chapters",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "AI_Chapter_UID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "AI_Chapter_Number",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "AI_Chapters",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "AI_Chapter_UID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Autobiography_Ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "AI_Chapter_Number",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}

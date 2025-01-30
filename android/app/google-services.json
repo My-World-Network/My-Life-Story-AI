@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1084809000414",
+    "project_id": "m-w-n-my-life-story-an-vwjfzv",
+    "storage_bucket": "m-w-n-my-life-story-an-vwjfzv.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084809000414:android:bbf9f7a1febd2a4f3f594f",
+        "android_client_info": {
+          "package_name": "com.mycompany.mwnmylifestory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084809000414-3aemn0cgc4mm4jv25va596uaom9rm52p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.mwnmylifestory",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "1084809000414-65v7ceudhjsnrfid77kcqjt6t9brga09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi8q8AtqoM_V0hQlCHievOUQvoYC-FQHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084809000414-65v7ceudhjsnrfid77kcqjt6t9brga09.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1084809000414-6f5r6745p5bhb9mpet7q1mc3b4mri5fg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.mwnmylifestory"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

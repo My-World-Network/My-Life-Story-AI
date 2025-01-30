@@ -1,0 +1,37 @@
+// Export pages
+export '/my_life_story_main_folder/autobiography_folder/select_folder/autobiography_select_page_folder/autobiography_select_page/autobiography_select_page_widget.dart'
+    show AutobiographySelectPageWidget;
+export '/my_life_story_main_folder/autobiography_folder/autobiography_creation_page_folder/autobiography_creation_page1/autobiography_creation_page1_widget.dart'
+    show AutobiographyCreationPage1Widget;
+export '/profile_folder/profile_page_folder/profile_settings_page/profile_settings_page_widget.dart'
+    show ProfileSettingsPageWidget;
+export '/my_life_story_main_folder/home_page/my_life_story_home_page/my_life_story_home_page_widget.dart'
+    show MyLifeStoryHomePageWidget;
+export '/my_life_story_main_folder/autobiography_folder/autobiography_generating_page_folder/autobiography_generating_page/autobiography_generating_page_widget.dart'
+    show AutobiographyGeneratingPageWidget;
+export '/profile_folder/simple_authentication/auth_welcome_screen/auth_welcome_screen_widget.dart'
+    show AuthWelcomeScreenWidget;
+export '/profile_folder/simple_authentication/auth_create/auth_create_widget.dart'
+    show AuthCreateWidget;
+export '/profile_folder/simple_authentication/auth_login/auth_login_widget.dart'
+    show AuthLoginWidget;
+export '/profile_folder/simple_authentication/auth_forgot_password/auth_forgot_password_widget.dart'
+    show AuthForgotPasswordWidget;
+export '/my_life_story_main_folder/autobiography_folder/edit_folder/edit_autobiography_folder/edit_autobiography_page/edit_autobiography_page_widget.dart'
+    show EditAutobiographyPageWidget;
+export '/my_life_story_main_folder/autobiography_folder/view_folder/autobiography_reading_page/autobiography_reading_page/autobiography_reading_page_widget.dart'
+    show AutobiographyReadingPageWidget;
+export '/call_to_action/call_to_action_page_1/call_to_action_page1_widget.dart'
+    show CallToActionPage1Widget;
+export '/call_to_action/call_to_action_page_2/call_to_action_page2_widget.dart'
+    show CallToActionPage2Widget;
+export '/blur_bubble_template/blur_bubble_template_widget.dart'
+    show BlurBubbleTemplateWidget;
+export '/my_life_story_main_folder/autobiography_folder/autobiography_creation_page_folder/autobiography_creation_page2/autobiography_creation_page2_widget.dart'
+    show AutobiographyCreationPage2Widget;
+export '/my_life_story_main_folder/autobiography_folder/autobiography_creation_page_folder/autobiography_creation_page3/autobiography_creation_page3_widget.dart'
+    show AutobiographyCreationPage3Widget;
+export '/my_life_story_main_folder/autobiography_folder/select_folder/autobiography_chapter_select_page/autobiography_chapter_select_page/autobiography_chapter_select_page_widget.dart'
+    show AutobiographyChapterSelectPageWidget;
+export '/my_life_story_main_folder/autobiography_folder/edit_folder/edit_autobiography_chapter_folder/edit_autobiography_chapter_page/edit_autobiography_chapter_page_widget.dart'
+    show EditAutobiographyChapterPageWidget;
