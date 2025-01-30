@@ -1,5 +1,4 @@
-# My-Life-Story-AI
-
+My Life Story - AI Autobiographer
 🚀 An AI-powered web application for writing autobiographies with real-time formatting and editing.
 
 Overview
