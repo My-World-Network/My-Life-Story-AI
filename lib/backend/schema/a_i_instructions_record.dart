@@ -128,6 +128,51 @@ class AIInstructionsRecord extends FirestoreRecord {
   String get aIAssistantID => _aIAssistantID ?? '';
   bool hasAIAssistantID() => _aIAssistantID != null;
 
+  // "Significant_Person_1_Name" field.
+  String? _significantPerson1Name;
+  String get significantPerson1Name => _significantPerson1Name ?? '';
+  bool hasSignificantPerson1Name() => _significantPerson1Name != null;
+
+  // "Significant_Person_1_Relation" field.
+  String? _significantPerson1Relation;
+  String get significantPerson1Relation => _significantPerson1Relation ?? '';
+  bool hasSignificantPerson1Relation() => _significantPerson1Relation != null;
+
+  // "Significant_Person_1_Content" field.
+  String? _significantPerson1Content;
+  String get significantPerson1Content => _significantPerson1Content ?? '';
+  bool hasSignificantPerson1Content() => _significantPerson1Content != null;
+
+  // "Significant_Person_2_Name" field.
+  String? _significantPerson2Name;
+  String get significantPerson2Name => _significantPerson2Name ?? '';
+  bool hasSignificantPerson2Name() => _significantPerson2Name != null;
+
+  // "Significant_Person_2_Relation" field.
+  String? _significantPerson2Relation;
+  String get significantPerson2Relation => _significantPerson2Relation ?? '';
+  bool hasSignificantPerson2Relation() => _significantPerson2Relation != null;
+
+  // "Significant_Person_2_Content" field.
+  String? _significantPerson2Content;
+  String get significantPerson2Content => _significantPerson2Content ?? '';
+  bool hasSignificantPerson2Content() => _significantPerson2Content != null;
+
+  // "Significant_Person_3_Name" field.
+  String? _significantPerson3Name;
+  String get significantPerson3Name => _significantPerson3Name ?? '';
+  bool hasSignificantPerson3Name() => _significantPerson3Name != null;
+
+  // "Significant_Person_3_Relation" field.
+  String? _significantPerson3Relation;
+  String get significantPerson3Relation => _significantPerson3Relation ?? '';
+  bool hasSignificantPerson3Relation() => _significantPerson3Relation != null;
+
+  // "Significant_Person_3_Content" field.
+  String? _significantPerson3Content;
+  String get significantPerson3Content => _significantPerson3Content ?? '';
+  bool hasSignificantPerson3Content() => _significantPerson3Content != null;
+
   DocumentReference get parentReference => reference.parent.parent!;
 
   void _initializeFields() {
@@ -161,6 +206,24 @@ class AIInstructionsRecord extends FirestoreRecord {
     _aIUserOpenAIKey = snapshotData['AI_User_OpenAI_Key'] as String?;
     _aIThreadID = snapshotData['AI_Thread_ID'] as String?;
     _aIAssistantID = snapshotData['AI_Assistant_ID'] as String?;
+    _significantPerson1Name =
+        snapshotData['Significant_Person_1_Name'] as String?;
+    _significantPerson1Relation =
+        snapshotData['Significant_Person_1_Relation'] as String?;
+    _significantPerson1Content =
+        snapshotData['Significant_Person_1_Content'] as String?;
+    _significantPerson2Name =
+        snapshotData['Significant_Person_2_Name'] as String?;
+    _significantPerson2Relation =
+        snapshotData['Significant_Person_2_Relation'] as String?;
+    _significantPerson2Content =
+        snapshotData['Significant_Person_2_Content'] as String?;
+    _significantPerson3Name =
+        snapshotData['Significant_Person_3_Name'] as String?;
+    _significantPerson3Relation =
+        snapshotData['Significant_Person_3_Relation'] as String?;
+    _significantPerson3Content =
+        snapshotData['Significant_Person_3_Content'] as String?;
   }
 
   static Query<Map<String, dynamic>> collection([DocumentReference? parent]) =>
@@ -224,6 +287,15 @@ Map<String, dynamic> createAIInstructionsRecordData({
   String? aIUserOpenAIKey,
   String? aIThreadID,
   String? aIAssistantID,
+  String? significantPerson1Name,
+  String? significantPerson1Relation,
+  String? significantPerson1Content,
+  String? significantPerson2Name,
+  String? significantPerson2Relation,
+  String? significantPerson2Content,
+  String? significantPerson3Name,
+  String? significantPerson3Relation,
+  String? significantPerson3Content,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -248,6 +320,15 @@ Map<String, dynamic> createAIInstructionsRecordData({
       'AI_User_OpenAI_Key': aIUserOpenAIKey,
       'AI_Thread_ID': aIThreadID,
       'AI_Assistant_ID': aIAssistantID,
+      'Significant_Person_1_Name': significantPerson1Name,
+      'Significant_Person_1_Relation': significantPerson1Relation,
+      'Significant_Person_1_Content': significantPerson1Content,
+      'Significant_Person_2_Name': significantPerson2Name,
+      'Significant_Person_2_Relation': significantPerson2Relation,
+      'Significant_Person_2_Content': significantPerson2Content,
+      'Significant_Person_3_Name': significantPerson3Name,
+      'Significant_Person_3_Relation': significantPerson3Relation,
+      'Significant_Person_3_Content': significantPerson3Content,
     }.withoutNulls,
   );
 
@@ -283,7 +364,16 @@ class AIInstructionsRecordDocumentEquality
         e1?.aIUserOwnOpenAIAPIKey == e2?.aIUserOwnOpenAIAPIKey &&
         e1?.aIUserOpenAIKey == e2?.aIUserOpenAIKey &&
         e1?.aIThreadID == e2?.aIThreadID &&
-        e1?.aIAssistantID == e2?.aIAssistantID;
+        e1?.aIAssistantID == e2?.aIAssistantID &&
+        e1?.significantPerson1Name == e2?.significantPerson1Name &&
+        e1?.significantPerson1Relation == e2?.significantPerson1Relation &&
+        e1?.significantPerson1Content == e2?.significantPerson1Content &&
+        e1?.significantPerson2Name == e2?.significantPerson2Name &&
+        e1?.significantPerson2Relation == e2?.significantPerson2Relation &&
+        e1?.significantPerson2Content == e2?.significantPerson2Content &&
+        e1?.significantPerson3Name == e2?.significantPerson3Name &&
+        e1?.significantPerson3Relation == e2?.significantPerson3Relation &&
+        e1?.significantPerson3Content == e2?.significantPerson3Content;
   }
 
   @override
@@ -308,7 +398,16 @@ class AIInstructionsRecordDocumentEquality
         e?.aIUserOwnOpenAIAPIKey,
         e?.aIUserOpenAIKey,
         e?.aIThreadID,
-        e?.aIAssistantID
+        e?.aIAssistantID,
+        e?.significantPerson1Name,
+        e?.significantPerson1Relation,
+        e?.significantPerson1Content,
+        e?.significantPerson2Name,
+        e?.significantPerson2Relation,
+        e?.significantPerson2Content,
+        e?.significantPerson3Name,
+        e?.significantPerson3Relation,
+        e?.significantPerson3Content
       ]);
 
   @override

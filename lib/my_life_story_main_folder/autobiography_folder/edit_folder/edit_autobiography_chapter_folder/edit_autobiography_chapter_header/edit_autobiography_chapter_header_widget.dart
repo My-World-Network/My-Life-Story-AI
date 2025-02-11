@@ -187,7 +187,7 @@ class _EditAutobiographyChapterHeaderWidgetState
                                                 ),
                                                 onPressed: () async {
                                                   context.goNamed(
-                                                    'AutobiographyChapterSelectPage',
+                                                    'AIChapterSelectPage',
                                                     queryParameters: {
                                                       'refAutobiography':
                                                           serializeParam(

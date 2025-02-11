@@ -46,7 +46,7 @@ class _AutobiographyCreationPageNavBarWidgetState
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            FlutterFlowTheme.of(context).navFade1,
+            FlutterFlowTheme.of(context).transparent,
             FlutterFlowTheme.of(context).navFade2,
             FlutterFlowTheme.of(context).navFade3,
             FlutterFlowTheme.of(context).navFade4,

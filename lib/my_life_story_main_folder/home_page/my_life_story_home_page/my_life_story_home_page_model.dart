@@ -1,8 +1,8 @@
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/my_life_story_main_folder/home_page/create_new_autobiography_component/create_new_autobiography_component_widget.dart';
-import '/my_life_story_main_folder/home_page/home_page_header_component/home_page_header_component_widget.dart';
-import '/my_life_story_main_folder/home_page/home_page_nav_bar_component/home_page_nav_bar_component_widget.dart';
-import '/my_life_story_main_folder/home_page/my_life_story_logo_home_page_component/my_life_story_logo_home_page_component_widget.dart';
+import '/my_life_story_main_folder/autobiography_folder/main_components/create_new_autobiography_component/create_new_autobiography_component_widget.dart';
+import '/my_life_story_main_folder/home_page/home_page_header_nav_bar_component/home_page_header_nav_bar_component_widget.dart';
+import '/my_life_story_main_folder/home_page/latest_autobiography_folder/latest_autobiography_component/latest_autobiography_component_widget.dart';
 import 'my_life_story_home_page_widget.dart' show MyLifeStoryHomePageWidget;
 import 'package:flutter/material.dart';
 
@@ -12,36 +12,48 @@ class MyLifeStoryHomePageModel
 
   bool togglePlusButtonOff = false;
 
+  bool toggleStep1Open = false;
+
+  bool toggleStep2Open = false;
+
+  bool toggleStep3Open = false;
+
   ///  State fields for stateful widgets in this page.
 
+  // Model for LatestAutobiographyComponent component.
+  late LatestAutobiographyComponentModel latestAutobiographyComponentModel;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  AutobiographiesRecord? backendCreateAutobiography1;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  UserChaptersRecord? backendCreateUserChapters1;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  UserAutobiographyRecord? backendCreateUserAutobiography1;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  AIChaptersRecord? backendCreateAIChapters1;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  AIAutobiographyRecord? backendCreateAIAutobiography1;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  AIInstructionsRecord? backendCreateAIInstructions1;
   // Model for HomePageHeaderComponent.
-  late HomePageHeaderComponentModel homePageHeaderComponentModel;
-  // Model for MyLifeStoryLogoHomePageComponent component.
-  late MyLifeStoryLogoHomePageComponentModel
-      myLifeStoryLogoHomePageComponentModel;
+  late HomePageHeaderNavBarComponentModel homePageHeaderComponentModel;
   // Model for CreateNewAutobiographyComponent component.
   late CreateNewAutobiographyComponentModel
       createNewAutobiographyComponentModel;
-  // Model for HomePageNavBarComponent component.
-  late HomePageNavBarComponentModel homePageNavBarComponentModel;
 
   @override
   void initState(BuildContext context) {
+    latestAutobiographyComponentModel =
+        createModel(context, () => LatestAutobiographyComponentModel());
     homePageHeaderComponentModel =
-        createModel(context, () => HomePageHeaderComponentModel());
-    myLifeStoryLogoHomePageComponentModel =
-        createModel(context, () => MyLifeStoryLogoHomePageComponentModel());
+        createModel(context, () => HomePageHeaderNavBarComponentModel());
     createNewAutobiographyComponentModel =
         createModel(context, () => CreateNewAutobiographyComponentModel());
-    homePageNavBarComponentModel =
-        createModel(context, () => HomePageNavBarComponentModel());
   }
 
   @override
   void dispose() {
+    latestAutobiographyComponentModel.dispose();
     homePageHeaderComponentModel.dispose();
-    myLifeStoryLogoHomePageComponentModel.dispose();
     createNewAutobiographyComponentModel.dispose();
-    homePageNavBarComponentModel.dispose();
   }
 }

@@ -65,11 +65,22 @@ abstract class FlutterFlowTheme {
   late Color iconSelected;
   late Color iconUnselected;
   late Color iconBG;
-  late Color navFade1;
+  late Color transparent;
   late Color navFade2;
   late Color navFade3;
   late Color navFade4;
   late Color navFade5;
+  late Color tutorialFade1;
+  late Color tutorialFade2;
+  late Color tutorialFade3;
+  late Color tutorialFade4;
+  late Color headerColour;
+  late Color headerTextShadow;
+  late Color positiveFill;
+  late Color positiveOutline;
+  late Color negativeFill;
+  late Color negativeOutline;
+  late Color positiveHover;
 
   @Deprecated('Use displaySmallFamily instead')
   String get title1Family => displaySmallFamily;
@@ -145,7 +156,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color primary = const Color(0xFFD9B168);
   late Color secondary = const Color(0xFFB7C7DE);
   late Color tertiary = const Color(0xFF7DCFB6);
-  late Color alternate = const Color(0xFFD3D0D0);
+  late Color alternate = const Color(0xFFBBBBBB);
   late Color primaryText = const Color(0xFF1B1B1B);
   late Color secondaryText = const Color(0xFF666666);
   late Color primaryBackground = const Color(0xFFFFFFFF);
@@ -170,11 +181,22 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color iconSelected = const Color(0xFFFCFCF7);
   late Color iconUnselected = const Color(0xFFFFFFFF);
   late Color iconBG = const Color(0xFFF7ECE4);
-  late Color navFade1 = const Color(0x00D9B168);
+  late Color transparent = const Color(0x00FFFFFF);
   late Color navFade2 = const Color(0x1FD9B168);
   late Color navFade3 = const Color(0x41D9B168);
   late Color navFade4 = const Color(0x5CD9B168);
   late Color navFade5 = const Color(0x74D9B168);
+  late Color tutorialFade1 = const Color(0x37FFFFFF);
+  late Color tutorialFade2 = const Color(0x7EFFFFFF);
+  late Color tutorialFade3 = const Color(0xBBFFFFFF);
+  late Color tutorialFade4 = const Color(0xE4FFFFFF);
+  late Color headerColour = const Color(0x5CD9B168);
+  late Color headerTextShadow = const Color(0x571B1B1B);
+  late Color positiveFill = const Color(0xFF007BFF);
+  late Color positiveOutline = const Color(0xFF0056B3);
+  late Color negativeFill = const Color(0xFFD6D6D6);
+  late Color negativeOutline = const Color(0xFF333333);
+  late Color positiveHover = const Color(0xFF2D94FF);
 }
 
 abstract class Typography {
@@ -358,11 +380,22 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color iconSelected = const Color(0xFF07EEF3);
   late Color iconUnselected = const Color(0xFF5B82C2);
   late Color iconBG = const Color(0xFF811B74);
-  late Color navFade1 = const Color(0xFF33838D);
+  late Color transparent = const Color(0xFF33838D);
   late Color navFade2 = const Color(0xFFE72B19);
   late Color navFade3 = const Color(0xFF88DA17);
   late Color navFade4 = const Color(0xFFF53EAC);
   late Color navFade5 = const Color(0xFFAF192E);
+  late Color tutorialFade1 = const Color(0xFFCE3FCC);
+  late Color tutorialFade2 = const Color(0xFFF44D21);
+  late Color tutorialFade3 = const Color(0xFF061306);
+  late Color tutorialFade4 = const Color(0xFF2D7179);
+  late Color headerColour = const Color(0xFF35E81D);
+  late Color headerTextShadow = const Color(0xFFED8C44);
+  late Color positiveFill = const Color(0xFF5CBCA4);
+  late Color positiveOutline = const Color(0xFF872356);
+  late Color negativeFill = const Color(0xFF70980B);
+  late Color negativeOutline = const Color(0xFF7D8E09);
+  late Color positiveHover = const Color(0xFF3D5A66);
 }
 
 extension TextStyleHelper on TextStyle {

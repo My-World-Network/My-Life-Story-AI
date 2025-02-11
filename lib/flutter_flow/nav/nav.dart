@@ -89,14 +89,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'AutobiographySelectPage',
           path: '/autobiographySelectPage',
-          builder: (context, params) => AutobiographySelectPageWidget(
-            refAutobiographiesList: params.getParam<DocumentReference>(
-              'refAutobiographiesList',
-              ParamType.DocumentReference,
-              isList: true,
-              collectionNamePath: ['Autobiographies'],
-            ),
-          ),
+          builder: (context, params) => const AutobiographySelectPageWidget(),
         ),
         FFRoute(
           name: 'AutobiographyCreationPage1',
@@ -356,24 +349,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'AutobiographyChapterSelectPage',
-          path: '/autobiographyChapterSelectPage',
-          builder: (context, params) => AutobiographyChapterSelectPageWidget(
-            refAutobiography: params.getParam(
-              'refAutobiography',
-              ParamType.DocumentReference,
-              isList: false,
-              collectionNamePath: ['Autobiographies'],
-            ),
-            refAutobiographyList: params.getParam<DocumentReference>(
-              'refAutobiographyList',
-              ParamType.DocumentReference,
-              isList: true,
-              collectionNamePath: ['Autobiographies'],
-            ),
-          ),
-        ),
-        FFRoute(
           name: 'EditAutobiographyChapterPage',
           path: '/editAutobiographyChapterPage',
           builder: (context, params) => EditAutobiographyChapterPageWidget(
@@ -388,6 +363,38 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.DocumentReference,
               isList: false,
               collectionNamePath: ['Autobiographies', 'AI_Chapters'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'HomePageComponentsAbandonded',
+          path: '/homePageComponentsAbandonded',
+          builder: (context, params) => const HomePageComponentsAbandondedWidget(),
+        ),
+        FFRoute(
+          name: 'TutorialStep1Page',
+          path: '/tutorialStep1Page',
+          builder: (context, params) => const TutorialStep1PageWidget(),
+        ),
+        FFRoute(
+          name: 'TutorialStep2Page',
+          path: '/tutorialStep2Page',
+          builder: (context, params) => const TutorialStep2PageWidget(),
+        ),
+        FFRoute(
+          name: 'TutorialStep3Page',
+          path: '/tutorialStep3Page',
+          builder: (context, params) => const TutorialStep3PageWidget(),
+        ),
+        FFRoute(
+          name: 'AIChapterSelectPage',
+          path: '/aIChapterSelectPage',
+          builder: (context, params) => AIChapterSelectPageWidget(
+            refAutobiography: params.getParam(
+              'refAutobiography',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Autobiographies'],
             ),
           ),
         )

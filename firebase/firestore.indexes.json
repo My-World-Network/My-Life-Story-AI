@@ -45,6 +45,34 @@
           "order": "ASCENDING"
         }
       ]
+    },
+    {
+      "collectionGroup": "Autobiographies",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Autobiography_UID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Autobiography_Created_At",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Autobiographies",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Autobiography_UID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Autobiography_Updated_At",
+          "order": "ASCENDING"
+        }
+      ]
     }
   ]
 }

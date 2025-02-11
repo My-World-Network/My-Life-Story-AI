@@ -620,8 +620,8 @@ class _EditAutobiographyChapterPageWidgetState
                                                               .reference
                                                               .delete();
 
-                                                          context.pushNamed(
-                                                            'AutobiographyChapterSelectPage',
+                                                          context.goNamed(
+                                                            'AIChapterSelectPage',
                                                             queryParameters: {
                                                               'refAutobiography':
                                                                   serializeParam(

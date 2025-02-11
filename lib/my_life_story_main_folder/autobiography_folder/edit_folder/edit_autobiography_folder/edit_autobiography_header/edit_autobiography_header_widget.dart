@@ -156,14 +156,6 @@ class _EditAutobiographyHeaderWidgetState
                                           onPressed: () async {
                                             context.goNamed(
                                               'AutobiographySelectPage',
-                                              queryParameters: {
-                                                'refAutobiographiesList':
-                                                    serializeParam(
-                                                  widget.refAutobiographyList,
-                                                  ParamType.DocumentReference,
-                                                  isList: true,
-                                                ),
-                                              }.withoutNulls,
                                               extra: <String, dynamic>{
                                                 kTransitionInfoKey:
                                                     const TransitionInfo(

@@ -114,8 +114,8 @@ class _MyLifeStoryLogoHomePageComponentWidgetState
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
                       'assets/images/My_Life_Story_Logo.png',
-                      width: 164.0,
-                      height: 164.0,
+                      width: 314.0,
+                      height: 314.0,
                       fit: BoxFit.cover,
                     ),
                   ).animateOnPageLoad(
@@ -135,7 +135,7 @@ class _MyLifeStoryLogoHomePageComponentWidgetState
                           FlutterFlowTheme.of(context).headlineLarge.override(
                         fontFamily: 'Inter Tight',
                         color: FlutterFlowTheme.of(context).primaryText,
-                        fontSize: 36.0,
+                        fontSize: 46.0,
                         letterSpacing: 0.0,
                         shadows: [
                           const Shadow(
@@ -155,22 +155,25 @@ class _MyLifeStoryLogoHomePageComponentWidgetState
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'An AI Autobiography App',
-                      textAlign: TextAlign.center,
-                      style:
-                          FlutterFlowTheme.of(context).headlineMedium.override(
-                        fontFamily: 'Inter Tight',
-                        color: FlutterFlowTheme.of(context).primaryText,
-                        fontSize: 18.0,
-                        letterSpacing: 0.0,
-                        shadows: [
-                          const Shadow(
-                            color: Color(0x52000000),
-                            offset: Offset(2.0, 2.0),
-                            blurRadius: 2.0,
-                          )
-                        ],
+                    Expanded(
+                      child: Text(
+                        'An AI Autobiography App',
+                        textAlign: TextAlign.center,
+                        style: FlutterFlowTheme.of(context)
+                            .headlineMedium
+                            .override(
+                          fontFamily: 'Inter Tight',
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          fontSize: 21.0,
+                          letterSpacing: 0.0,
+                          shadows: [
+                            const Shadow(
+                              color: Color(0x52000000),
+                              offset: Offset(2.0, 2.0),
+                              blurRadius: 2.0,
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ],
